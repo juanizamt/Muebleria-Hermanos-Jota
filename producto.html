@@ -10,7 +10,7 @@
     <body>
         <header class="header">
             <a href="index.html" class="logo">
-                <img src="Fotos_hermanos_jota/logo.svg" alt="Logo de Mueblería Jota">
+                <img src="./assets/Fotos_hermanos_jota/logo.svg" alt="Logo de Mueblería Jota">
             </a>
             <nav class="nav-menu"> <!-- Barra Navegacion -->
                 <ul>
@@ -22,9 +22,16 @@
             </nav>
         </header>
 
-        <main>
-
-        </main>
+    <main>
+        <div id="detalle-producto">
+            <!-- JS cargará dinámicamente el producto -->
+            <img id="producto-img" src="" alt="Imagen del producto">
+            <h1 id="producto-nombre"></h1>
+            <p id="producto-descripcion"></p>
+            <p id="producto-precio"></p>
+            <button id="agregar-carrito">Añadir al carrito</button>
+        </div>
+    </main>
 
         <footer class="footer">
             <p>&copy; 2024 Mueblería Hermanos Jota. Todos los derechos reservados.</p>
