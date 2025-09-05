@@ -133,6 +133,26 @@ body {
     margin-top: 2rem;
 }
 
+.producto-detalle {
+    background-color: #f5f5dc; /* Ligero color beige */
+    border: 1px solid #ddd; /* Un borde sutil */
+    border-radius: 8px; /* Bordes redondeados para la tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto de elevación */
+    padding: 20px; /* Espacio interno */
+    margin-bottom: 20px; /* Espacio entre las tarjetas */
+    display: flex; /* Para que la imagen y el texto se acomoden uno al lado del otro */
+    flex-direction: column; /* Para que los elementos se apilen verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center; /* Centra el texto */
+}
+
+.producto-detalle img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Para que la imagen también tenga los bordes redondeados */
+    margin-bottom: 15px; /* Espacio entre la imagen y el texto */
+}
+
 /* ------------------- Media Queries (Responsivo) ------------------- */
 /* Telefono */
 .products-container {
