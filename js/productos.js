@@ -4,7 +4,7 @@ const productos = [
         nombre: 'Sillas Córdoba',
         precio: 750,
         imagen: './assets/Fotos_hermanos_jota/Sillas Córdoba.png',
-        descripcion: 'Inspiradas en el diseño moderno y construidas con la robustez de la madera maciza, las Sillas Córdoba son la pieza perfecta para cualquier espacio contemporáneo. Cada silla es el resultado de un meticuloso trabajo artesanal, combinando líneas limpias con la calidez de la madera natural. Su diseño ergonómico asegura comodidad sin sacrificar el estilo.',
+        descripcion: 'Inspiradas en el diseño moderno y construidas con la robustez de la madera maciza, las Sillas Córdoba son la pieza perfecta para cualquier espacio contemporáneo.',
         alt: 'Sillas Córdoba de madera'
     },
     {
@@ -12,7 +12,7 @@ const productos = [
         nombre: 'Aparador Uspallata',
         precio: 1200,
         imagen: './assets/Fotos_hermanos_jota/Aparador Uspallata.png',
-        descripcion: 'Inspirado en la majestuosidad de la cordillera de Uspallata, este aparador combina la solidez de la madera maciza con detalles de diseño minimalista. Ofrece un amplio espacio de almacenamiento, ideal para organizar vajilla o libros, y su superficie lisa es perfecta para exhibir elementos decorativos. Una pieza robusta y elegante que evoca la belleza natural de la montaña.',
+        descripcion: 'Inspirado en la majestuosidad de la cordillera de Uspallata, este aparador combina la solidez de la madera maciza con detalles de diseño minimalista.',
         alt: 'Aparador Uspallata: Un mueble robusto y elegante con diseño minimalista.'
     },
     {
@@ -20,7 +20,7 @@ const productos = [
         nombre: 'Biblioteca Recoleta',
         precio: 950,
         imagen: './assets/Fotos_hermanos_jota/Biblioteca Recoleta.png',
-        descripcion: 'Con líneas clásicas que rinden homenaje a la arquitectura del barrio de Recoleta, esta biblioteca es un mueble atemporal. Su estructura de madera sólida y sus estantes ajustables la convierten en la solución ideal para organizar tu colección de libros y objetos. Es la combinación perfecta de funcionalidad y sofisticación.',
+        descripcion: 'Con líneas clásicas que rinden homenaje a la arquitectura del barrio de Recoleta, esta biblioteca es un mueble atemporal. Es la combinación perfecta de funcionalidad y sofisticación.',
         alt: 'Biblioteca Recoleta: Un mueble clásico de madera con estantes ajustables.'
     },
     {
@@ -28,7 +28,7 @@ const productos = [
         nombre: 'Butaca Mendoza',
         precio: 800,
         imagen: './assets/Fotos_hermanos_jota/Butaca Mendoza.png',
-        descripcion: 'La butaca Mendoza es la definición de confort y estilo. Diseñada con un asiento profundo y un respaldo curvo, ofrece una experiencia de descanso inigualable. Su estructura de madera pulida y su tapizado de alta calidad la convierten en un acento elegante y acogedor para cualquier rincón de lectura o sala de estar.',
+        descripcion: 'La butaca Mendoza es la definición de confort y estilo. Diseñada con un asiento profundo y un respaldo curvo, ofrece una experiencia de descanso inigualable. ',
         alt: 'Butaca Mendoza: Un sillón acogedor con asiento profundo y tapizado de alta calidad.'
     },
     {
@@ -86,6 +86,14 @@ const productos = [
         imagen: './assets/Fotos_hermanos_jota/Sofá Patagonia.png',
         descripcion: 'Inspirado en la inmensidad de la Patagonia, este sofá es la pieza central de cualquier sala de estar. Su diseño modular y su tapizado de alta resistencia garantizan comodidad y versatilidad. Es un mueble que, al igual que la región que lo nombra, es imponente y lleno de calidez.',
         alt: 'Sofá Patagonia: Un sofá modular grande y espacioso, ideal para familias.'
+    },
+    {
+        id: 'cama-neuquen',
+        nombre:'Cama Neuquén',
+        precio: 1200,
+        imagen: 'assets/Fotos_hermanos_jota/cama-neuquen.png',
+        descripcion: 'Cama plataforma con cabecero flotante tapizado en lino natural y estructura de madera maciza. Su diseño minimalista y sofisticado crea un ambiente de serenidad y elegancia, perfecto para dormitorios contemporáneos que buscan paz y simplicidad.',
+        alt: 'Cama Neuquén: Una cama con plataforma con cabecero flotante'
     }
 ];
 
@@ -107,7 +115,6 @@ function generarCatalogo() {
                 <h3>${producto.nombre}</h3>
                 <p class="precio">$${producto.precio} USD</p>
                 <!-- <button class="btn-agregar">Añadir al Carrito</button> --> <!-- Solo se va a poder añadir al carrito en producto.html -->
-
             </div>
         `;
         catalogoContainer.appendChild(productCard);

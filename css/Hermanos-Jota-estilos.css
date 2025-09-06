@@ -14,6 +14,26 @@ body {
     background-color: #fff;
 }
 
+a:hover{
+    border-radius: 5px;
+    background-color: #8b5e47;
+    color: #ffff;
+}
+a:active{
+    border-radius: 10px;
+    background-color: #8b5e47;
+    color: #fff;
+}
+
+a{
+    color: #8b5e47;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
 .hidden {
     display: none;
 }
@@ -24,7 +44,7 @@ body {
     justify-content: space-between; /* Esta propiedad es la que separa el logo del menú. */
     align-items: center;
     padding: 1rem;
-    background-color: #fff;
+    background-color: #e8e8e8;
     border-bottom: 1px solid #eee;
 }
 
@@ -92,7 +112,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Esto centra las tarjetas en la grilla */
-    gap: 1.5rem;
+    gap: 0.5rem;
+    padding: 20px;
 }
 
 .product-card {
@@ -110,8 +131,10 @@ body {
     align-items: stretch;
 
     /* Propiedad clave para limitar el ancho de la tarjeta */
-    width: 100%; /* Por defecto en móvil */
+    width: 50%; /* Por defecto en móvil */
     max-width: 300px; /* Limite el tamaño de la tarjeta en escritorios */
+    height: auto;
+    max-height: auto;
 }
 
 .product-card:hover {
@@ -120,7 +143,7 @@ body {
 }
 
 .product-card img {
-    width: 100%;
+    width: 50%;
     height: auto;
     display: block;
 }
@@ -140,10 +163,12 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto de elevación */
     padding: 20px; /* Espacio interno */
     margin-bottom: 20px; /* Espacio entre las tarjetas */
-    display: flex; /* Para que la imagen y el texto se acomoden uno al lado del otro */
+    display: flexbox; /* Para que la imagen y el texto se acomoden uno al lado del otro */
     flex-direction: column; /* Para que los elementos se apilen verticalmente */
     align-items: center; /* Centra el contenido horizontalmente */
     text-align: center; /* Centra el texto */
+    width: 25%;
+    max-height: 700px ;
 }
 
 .producto-detalle img {
@@ -176,8 +201,9 @@ body {
     .products-container {
         justify-content: space-between;
     }
-}
 
+
+}
 .carrito-container {
   display: flex;
   flex-direction: column;
