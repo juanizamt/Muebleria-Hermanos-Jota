@@ -17,7 +17,7 @@
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="productos.html">Catálogo</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="#" class="cart-icon">🛒 <span id="cart-counter">0</span></a></li>
+                    <li><a href="carrito.html" class="cart-icon">🛒 <span id="cart-counter">0</span></a></li>
                 </ul>
             </nav>
         </header>
@@ -25,146 +25,9 @@
         <main>
             <h1>Catálogo de Productos</h1>
             <input type="text" id="buscar" placeholder="Buscar productos...">
-    
+
             <div class="products-container" id="catalogo-container">
-            <!-- Aquí JS insertará las tarjetas de productos -->
-
-                <div class="producto-detalle" id="producto-detalle-container">
-                <img src="assets/Fotos_hermanos_jota/Sillas Córdoba.png" alt="Imagen del producto seleccionado" width="300">
-
-                    <div class="producto-info">
-                    <h1 id="producto-nombre">Sillas Córdoba</h1>
-                    <p id="producto-precio" class="precio">$750 USD</p>
-                    <p id="producto-descripcion">
-                        Inspiradas en el diseño moderno y construidas con la robustez de la madera maciza, las Sillas Córdoba son la pieza perfecta para cualquier espacio contemporáneo. Cada silla es el resultado de un meticuloso trabajo artesanal, combinando líneas limpias con la calidez de la madera natural. Su diseño ergonómico asegura comodidad sin sacrificar el estilo.
-                    </p>
-                
-                <button id="add-to-cart-btn" class="btn-agregar">Añadir al Carrito</button>
                 </div>
-                </div>
-
-                <div class="producto-detalle">
-                <img src="assets/Fotos_hermanos_jota/Aparador Uspallata.png" alt="Aparador Uspallata: Un mueble robusto y elegante con diseño minimalista." width="300">
-                
-                <div class="producto-info">
-                <h1 id="producto-nombre">Aparador Uspallata</h1>
-                <p id="producto-precio" class="precio">$1,200 USD</p>
-                <p id="producto-descripcion">
-                Inspirado en la majestuosidad de la cordillera de Uspallata, este aparador combina la solidez de la madera maciza con detalles de diseño minimalista. Ofrece un amplio espacio de almacenamiento, ideal para organizar vajilla o libros, y su superficie lisa es perfecta para exhibir elementos decorativos. Una pieza robusta y elegante que evoca la belleza natural de la montaña.
-                </p>
-                <button id="add-to-cart-btn" class="btn-agregar">Añadir al Carrito</button>
-                </div>
-                </div>
-
-                <div class="producto-detalle">
-                <img src="assets/Fotos_hermanos_jota/Biblioteca Recoleta.png" alt="Biblioteca Recoleta: Un mueble clásico de madera con estantes ajustables." width="300">
-                <div class="producto-info">
-                    <h1 id="producto-nombre">Biblioteca Recoleta</h1>
-                    <p id="producto-precio" class="precio">$950 USD</p>
-                    <p id="producto-descripcion">
-                         Con líneas clásicas que rinden homenaje a la arquitectura del barrio de Recoleta, esta biblioteca es un mueble atemporal. Su estructura de madera sólida y sus estantes ajustables la convierten en la solución ideal para organizar tu colección de libros y objetos. Es la combinación perfecta de funcionalidad y sofisticación.
-                     </p>
-                    <button id="add-to-cart-btn" class="btn-agregar">Añadir al Carrito</button>
-                </div>
-                </div>
-
-                <div class="producto-detalle">
-                    <img src="assets/Fotos_hermanos_jota/Butaca Mendoza.png" alt="Butaca Mendoza: Un sillón acogedor con asiento profundo y tapizado de alta calidad." width="300">
-                    <div class="producto-info">
-                    <h1 id="producto-nombre">Butaca Mendoza</h1>
-                    <p id="producto-precio" class="precio">$800 USD</p>
-                    <p id="producto-descripcion">
-                         La butaca Mendoza es la definición de confort y estilo. Diseñada con un asiento profundo y un respaldo curvo, ofrece una experiencia de descanso inigualable. Su estructura de madera pulida y su tapizado de alta calidad la convierten en un acento elegante y acogedor para cualquier rincón de lectura o sala de estar.
-                    </p>
-                    <button id="add-to-cart-btn" class="btn-agregar">Añadir al Carrito</button>
-                </div>
-                </div>
-
-                <div class="producto-detalle">
-                    <img src="assets/Fotos_hermanos_jota/Escritorio Costa.png" alt="Escritorio Costa: Un escritorio minimalista de madera con cajón oculto." width="300">
-                    <div class="producto-info">
-                        <h1 id="producto-nombre">Escritorio Costa</h1>
-                        <p id="producto-precio" class="precio">$700 USD</p>
-                        <p id="producto-descripcion">
-                            Con un diseño que evoca la simplicidad y tranquilidad de la costa, este escritorio es la pieza ideal para crear un espacio de trabajo productivo. Sus líneas limpias y su amplia superficie de madera te brindan un entorno libre de distracciones, mientras que su cajón oculto mantiene tus herramientas organizadas.
-                        </p>
-                        <button id="add-to-cart-btn" class="btn-agregar">Añadir al Carrito</button>
-                    </div>
-                </div>
-
-                <div class="producto-detalle">
-                    <img src="assets/Fotos_hermanos_jota/Mesa Comedor Pampa.png" alt="Mesa Comedor Pampa: Una mesa grande y robusta, ideal para reuniones familiares." width="300">
-                    <div class="producto-info">
-                        <h1 id="producto-nombre">Mesa Comedor Pampa</h1>
-                        <p id="producto-precio" class="precio">$1,500 USD</p>
-                        <p id="producto-descripcion">
-                            Fuerte y espaciosa, la mesa comedor Pampa está construida para durar. Su diseño simple y robusto celebra la vasta extensión de la llanura pampeana. Con espacio para toda la familia, es el centro de reuniones perfecto para comidas memorables y conversaciones importantes, un mueble que pasará de generación en generación.
-                        </p>
-                        <button id="add-to-cart-btn" class="btn-agregar">Añadir al Carrito</button>
-                    </div>
-                </div>
-
-                <div class="producto-detalle">
-                    <img src="assets/Fotos_hermanos_jota/Mesa de Centro Araucaria.png" alt="Mesa de Centro Araucaria: Una mesa de centro con formas geométricas inspiradas en la naturaleza." width="300">
-                    <div class="producto-info">
-                        <h1 id="producto-nombre">Mesa de Centro Araucaria</h1>
-                        <p id="producto-precio" class="precio">$550 USD</p>
-                        <p id="producto-descripcion">
-                            Esculpida a mano con un diseño que imita las formas del árbol de araucaria, esta mesa de centro es una obra de arte funcional. Su superficie de madera con acabados detallados y sus patas geométricas la hacen un punto focal en cualquier sala de estar. Es la fusión perfecta entre la naturaleza y el diseño moderno.
-                        </p>
-                        <button id="add-to-cart-btn" class="btn-agregar">Añadir al Carrito</button>
-                    </div>
-                </div>
-
-                <div class="producto-detalle">
-                    <img src="assets/Fotos_hermanos_jota/Mesa de Noche Aconcagua.png" alt="Mesa de Noche Aconcagua: Una mesita compacta y elegante con cajón y estante." width="300">
-                    <div class="producto-info">
-                        <h1 id="producto-nombre">Mesa de Noche Aconcagua</h1>
-                        <p id="producto-precio" class="precio">$350 USD</p>
-                        <p id="producto-descripcion">
-                            Inspirada en la cumbre más alta de América, la mesa de noche Aconcagua se destaca por su solidez y elegancia. Su diseño compacto y sus líneas limpias la hacen perfecta para espacios pequeños, mientras que su cajón y estante abierto ofrecen la funcionalidad necesaria para tus pertenencias más personales.
-                        </p>
-                        <button id="add-to-cart-btn" class="btn-agregar">Añadir al Carrito</button>
-                    </div>
-                </div>
-
-                <div class="producto-detalle">
-                    <img src="assets/Fotos_hermanos_jota/Silla de Trabajo Belgrano.png" alt="Silla de Trabajo Belgrano: Una silla ergonómica de madera para escritorio." width="300">
-                    <div class="producto-info">
-                        <h1 id="producto-nombre">Silla de Trabajo Belgrano</h1>
-                        <p id="producto-precio" class="precio">$450 USD</p>
-                        <p id="producto-descripcion">
-                            La silla de trabajo Belgrano es la compañera ideal para tu escritorio. Su diseño ergonómico y su respaldo curvo te brindan el soporte que necesitas durante largas horas de trabajo. Combinando la artesanía tradicional con la funcionalidad moderna, esta silla es un testimonio de comodidad y durabilidad.
-                        </p>
-                        <button id="add-to-cart-btn" class="btn-agregar">Añadir al Carrito</button>
-                    </div>
-                </div>
-
-                <div class="producto-detalle">
-                    <img src="assets/Fotos_hermanos_jota/Sillón Copacabana.png" alt="Sillón Copacabana: Un sillón amplio y acogedor con cojines suaves." width="300">
-                    <div class="producto-info">
-                        <h1 id="producto-nombre">Sillón Copacabana</h1>
-                        <p id="producto-precio" class="precio">$900 USD</p>
-                        <p id="producto-descripcion">
-                            El sillón Copacabana es un llamado a la relajación y el confort. Su diseño amplio y sus cojines extra suaves te invitan a un merecido descanso. Con su estructura de madera expuesta, logra un equilibrio entre lo moderno y lo natural, convirtiéndolo en la pieza perfecta para cualquier sala.
-                        </p>
-                        <button id="add-to-cart-btn" class="btn-agregar">Añadir al Carrito</button>
-                    </div>
-                </div>
-
-                <div class="producto-detalle">
-                    <img src="assets/Fotos_hermanos_jota/Sofá Patagonia.png" alt="Sofá Patagonia: Un sofá modular grande y espacioso, ideal para familias." width="300">
-                    <div class="producto-info">
-                        <h1 id="producto-nombre">Sofá Patagonia</h1>
-                        <p id="producto-precio" class="precio">$1,800 USD</p>
-                        <p id="producto-descripcion">
-                            Inspirado en la inmensidad de la Patagonia, este sofá es la pieza central de cualquier sala de estar. Su diseño modular y su tapizado de alta resistencia garantizan comodidad y versatilidad. Es un mueble que, al igual que la región que lo nombra, es imponente y lleno de calidez.
-                        </p>
-                        <button id="add-to-cart-btn" class="btn-agregar">Añadir al Carrito</button>
-                    </div>
-                </div>
-
-            </div> <!--  Fin del contenedor de productos -->
         </main>
 
         <footer class="footer">
@@ -174,7 +37,9 @@
         </footer>
 
 
-        <script src="js/main.js"></script>
-        <script src="js/productos.js"></script>
+        
+        <script src="js/productos.js" type="module"></script>
+        <script src="js/producto-detalle.js" type="module"></script> <!-- Para el contador del carrito -->
+
     </body>
 </html>

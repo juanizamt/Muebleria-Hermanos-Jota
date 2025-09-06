@@ -106,7 +106,8 @@ function generarCatalogo() {
             <div class="card-info">
                 <h3>${producto.nombre}</h3>
                 <p class="precio">$${producto.precio} USD</p>
-                <button class="btn-agregar">Añadir al Carrito</button>
+                <!-- <button class="btn-agregar">Añadir al Carrito</button> --> <!-- Solo se va a poder añadir al carrito en producto.html -->
+
             </div>
         `;
         catalogoContainer.appendChild(productCard);
