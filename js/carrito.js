@@ -14,9 +14,8 @@ function mostrarProductosCarrito() {
     } else {
         carrito.forEach(producto => {
             const item = document.createElement('div');
-            item.classList.add('carrito-item-compacto'); // Clase CSS diferente
+            item.classList.add('carrito-item-compacto');
             
-            // CAMBIO AQUÍ: Plantilla HTML más compacta
             item.innerHTML = `
                 <img src="${producto.imagen}" alt="${producto.alt}" class="carrito-item-imagen">
                 <div class="item-info-compacto">

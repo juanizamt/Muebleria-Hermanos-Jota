@@ -121,5 +121,18 @@ function generarCatalogo() {
     });
 }
 
+// Función que se encarga de escuchar los cambios en la barra de búsqueda
+ /*buscarInput.addEventListener('input', e => {
+    const busqueda = e.target.value.toLowerCase();
+    
+    const productosFiltrados = productos.filter(producto => {
+        return producto.nombre.toLowerCase().includes(busqueda);
+    });
+    
+    generarCatalogo(productosFiltrados);
+}); */
+
+
+
 // Llama a la función para que se ejecute al cargar la página
 window.addEventListener('load', generarCatalogo);

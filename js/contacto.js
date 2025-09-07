@@ -6,13 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault(); // Evita que la página se recargue
 
         // Aquí iría la lógica para enviar el formulario a un servicio de backend,
-        // como Formspree o un servidor propio. Por ahora, solo simulará el éxito.
+        // como Formspree o un servidor propio. Por ahora solo simula el éxito.
 
-        // Muestra el mensaje de éxito
+        
         mensajeExito.textContent = '¡Gracias por tu mensaje! Te responderemos pronto.';
         mensajeExito.classList.remove('hidden');
-
-        // Opcional: limpiar el formulario después del envío
         form.reset();
     });
 });
