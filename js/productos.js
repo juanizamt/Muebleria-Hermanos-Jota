@@ -75,7 +75,7 @@ const productos = [
         id: 'sillon-copacabana',
         nombre: 'Sillón Copacabana',
         precio: 900,
-        imagen: './assets/Fotos_hermanos_jota/Sillón Copacabana.png',
+        imagen: './assets/Fotos_hermanos_jota/Sillón_Copacabana.png',
         descripcion: 'El sillón Copacabana es un llamado a la relajación y el confort. Su diseño amplio y sus cojines extra suaves te invitan a un merecido descanso. Con su estructura de madera expuesta, logra un equilibrio entre lo moderno y lo natural, convirtiéndolo en la pieza perfecta para cualquier sala.',
         alt: 'Sillón Copacabana: Un sillón amplio y acogedor con cojines suaves.'
     },
@@ -121,18 +121,4 @@ function generarCatalogo() {
     });
 }
 
-// Función que se encarga de escuchar los cambios en la barra de búsqueda
- /*buscarInput.addEventListener('input', e => {
-    const busqueda = e.target.value.toLowerCase();
-    
-    const productosFiltrados = productos.filter(producto => {
-        return producto.nombre.toLowerCase().includes(busqueda);
-    });
-    
-    generarCatalogo(productosFiltrados);
-}); */
-
-
-
-// Llama a la función para que se ejecute al cargar la página
 window.addEventListener('load', generarCatalogo);
